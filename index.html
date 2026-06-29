@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TreeOak Kitchen — The Culinary Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="page-flip.browser.js"></script>
+</head>
+<body>
+
+<!-- SAND BACKGROUND -->
+<div class="sand-bg"></div>
+
+<!-- TOP RIGHT SEARCH -->
+<div class="top-search">
+  <input type="text" class="search-input" placeholder="Search">
+  <span class="search-icon">&#128269;</span>
+</div>
+
+<!-- SIDE NAV ARROWS -->
+<button class="side-arrow left-arrow" id="prevBtn">&#8249;</button>
+<button class="side-arrow right-arrow" id="nextBtn">&#8250;</button>
+
+<!-- MAIN BOOK STAGE -->
+<div class="book-stage" id="bookStage">
+  <div id="flipBook">
+
+    <!-- PAGE 1: COVER (hard page) - INDIAN AESTHETIC -->
+    <div class="page" data-density="hard">
+      <div class="page-content cover-page indian-cover">
+        <!-- Indian spice pattern background -->
+        <div class="cover-spice-pattern"></div>
+        
+        <!-- Top accent line (traditional Indian border) -->
+        <div class="cover-accent-top"></div>
+        
+        <div class="cover-upper">
+          <div class="cover-logo-row">
+            <div class="cover-logo-title">TreeOak</div>
+            <div class="cover-mag-vertical">Kitchen &nbsp; Journal</div>
+          </div>
+          <!-- Indian spice categories with traditional symbols -->
+          <div class="cover-cats indian-cats">
+            <span>◆ Seekh & Smoke</span>
+            <span>◆ Curry & Clay</span>
+            <span>◆ Sweet Cardamom</span>
+            <span>◆ Saffron Stories</span>
+            <span>◆ Street Spice</span>
+          </div>
+        </div>
+        
+        <div class="cover-lower">
+          <!-- Feature image: authentic Indian food -->
+          <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=700&q=90&fit=crop" alt="Biryani and Indian cuisine" class="cover-photo">
+          
+          <!-- Indian-inspired overlay design -->
+          <div class="cover-overlay-text indian-overlay">
+            <!-- Decorative top accent -->
+            <div class="cover-spice-dot-line"></div>
+            
+            <div class="cover-exp">TASTE THE</div>
+            <div class="cover-big-indian">SOUL<br>OF<br>INDIA</div>
+            <div class="cover-sub-indian">HYDERABAD'S CULINARY HERITAGE</div>
+            
+            <div class="cover-taglines indian-taglines">
+              <div>Spice.</div><div>Tradition.</div><div>Passion.</div>
+            </div>
+            
+            <!-- Decorative spice badges -->
+            <div class="cover-spice-badges">
+              <div class="badge">🌶️ Chilli</div>
+              <div class="badge">🌾 Saffron</div>
+              <div class="badge">🫒 Turmeric</div>
+            </div>
+            
+            <!-- Barcode and price -->
+            <div class="cover-barcode">
+              <div class="barcode-lines"></div>
+              <div class="barcode-num">9876543210123</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bottom accent line -->
+        <div class="cover-accent-bottom"></div>
+      </div>
+    </div>
+
+    <!-- PAGE 2: Editor's Letter -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="big-word-heading">TreeOak</div>
+          <div class="editor-label">Editor's Bite</div>
+          <p class="editor-body">Food is more than taste—it's a visual language. This issue celebrates the harmony between flavour and form, where colour, texture, and composition elevate every dish into something memorable. From the slow heat of dal makhani to the delicate geometry of modern Indian desserts, we explore how our chefs turn meals into visual statements.</p>
+          <p class="editor-body">As diners become more design-aware, the presentation of food plays an even greater role in how we experience cuisine. We've curated a collection that reflects this shift: bold plating styles, art-inspired recipes, and stories from culinary artisans who treat their plates like canvases.</p>
+          <p class="editor-body">Whether you're a home cook with an eye for styling or a seasoned palate pushing aesthetic boundaries, we hope these pages feed your creativity as much as your appetite.</p>
+          <div class="editor-sign">Bon appétit,</div>
+          <div class="editor-sig-line">&#8213;&#8213;&#8213;&#8213;</div>
+          <div class="editor-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=120&h=120&q=80&fit=crop&crop=face" alt="Chef" class="editor-photo">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 3: Global Table -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="right-top-image-block">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=85&fit=crop" alt="Indian food spread" class="spread-hero-img">
+        </div>
+        <div class="right-text-block">
+          <div class="right-feature-title">Global Table:<br>Indian Cuisine<br>Without Borders</div>
+          <div class="right-photo-grid">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=200&q=80&fit=crop" alt="dish1" class="grid-photo">
+            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=200&q=80&fit=crop" alt="dish2" class="grid-photo">
+            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=200&q=80&fit=crop" alt="dish3" class="grid-photo">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=200&q=80&fit=crop" alt="dish4" class="grid-photo">
+          </div>
+          <div class="right-caption-text">Hyderabad</div>
+          <p class="right-body-text">In the bustling kitchens of the city and the quiet courtyards of old Hyderabad, cuisine reflects centuries of trade, migration, and cultural fusion. A single plate here might blend Mughal refinement, Deccani soul, and street-food boldness—all wrapped in the aroma of saffron and preserved spices.</p>
+          <p class="right-body-text">Local cooks still use traditional clay pots and charcoal fires. Recipes are passed down by gesture. Food, more than anything, is about generosity—meals are shared with chai and stories that stretch into the evening.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4: Contents -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">IN THIS ISSUE</div>
+          <div class="toc-title-big">Contents</div>
+          <div class="toc-rows">
+            <div class="toc-row"><span class="toc-pg">06</span><span class="toc-dash">—</span><div class="toc-info"><b>Chef's Special</b><div class="toc-sub">Dal Makhani, perfected over 18 hours</div></div></div>
+            <div class="toc-row"><span class="toc-pg">08</span><span class="toc-dash">—</span><div class="toc-info"><b>Signature Dishes</b><div class="toc-sub">The icons that define TreeOak</div></div></div>
+            <div class="toc-row"><span class="toc-pg">10</span><span class="toc-dash">—</span><div class="toc-info"><b>Recipe Studio</b><div class="toc-sub">Cook the cover dish step by step</div></div></div>
+            <div class="toc-row"><span class="toc-pg">12</span><span class="toc-dash">—</span><div class="toc-info"><b>Behind the Kitchen</b><div class="toc-sub">Process, craft, devotion</div></div></div>
+            <div class="toc-row"><span class="toc-pg">14</span><span class="toc-dash">—</span><div class="toc-info"><b>Customer Favourites</b><div class="toc-sub">Voices from our table</div></div></div>
+            <div class="toc-row"><span class="toc-pg">16</span><span class="toc-dash">—</span><div class="toc-info"><b>Seasonal Specials</b><div class="toc-sub">Monsoon & harvest editions</div></div></div>
+            <div class="toc-row"><span class="toc-pg">18</span><span class="toc-dash">—</span><div class="toc-info"><b>Desserts</b><div class="toc-sub">The sweet conclusion</div></div></div>
+            <div class="toc-row"><span class="toc-pg">20</span><span class="toc-dash">—</span><div class="toc-info"><b>Drink Pairings</b><div class="toc-sub">Sip & savor, curated</div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 5: TOC Feature -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="right-toc-feature">
+          <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=580&q=85&fit=crop" alt="Feature" class="toc-feat-img">
+          <div class="toc-feat-overlay">
+            <div class="toc-feat-label">FEATURED THIS ISSUE</div>
+            <div class="toc-feat-name">Seekh Kebab · Page 08</div>
+          </div>
+        </div>
+        <div class="toc-right-quote">
+          <blockquote>"Cooking is not a craft,<br>it is an art."</blockquote>
+          <cite>— Chef Ravi Kumar, Head Kitchen</cite>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 6: Kebab feature left -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">SIGNATURE SERIES</div>
+          <h2 class="big-word-heading sm">Seekh Kebab</h2>
+          <div class="rule-line"></div>
+          <p class="editor-body">The art of the kebab lies in its simplicity and precision. Ground spiced meat, shaped by hand on a skewer, kissed by charcoal flame. Every bite tells the story of generations.</p>
+          <div class="chef-details-row">
+            <div class="chef-detail">
+              <div class="cd-label">Meat</div>
+              <div class="cd-val">Mutton</div>
+            </div>
+            <div class="chef-detail">
+              <div class="cd-label">Grill Time</div>
+              <div class="cd-val">12 min</div>
+            </div>
+            <div class="chef-detail">
+              <div class="cd-label">Heat</div>
+              <div class="cd-val">900°C</div>
+            </div>
+          </div>
+          <div class="pull-quote">Charcoal + Spice + Time = Memory</div>
+          <p class="editor-body" style="margin-top:12px;">Our kebabs are hand-rolled each service, no mass production. We rest the meat mixture for 4 hours minimum, letting the spices bloom into the fibre of the meat. The grill is set to exactly 900 degrees—measured, not guessed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 7: Kebab feature right photo -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sl-full-photo">
+          <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=580&q=85&fit=crop" alt="Seekh Kebab" class="sl-photo">
+          <div class="sl-photo-caption">Seekh Kebab · Charcoal · Served with mint chutney</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 8: Signature Dishes left -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">ON THE MENU</div>
+          <h2 class="big-word-heading sm">Signature<br>Dishes</h2>
+          <div class="rule-line"></div>
+          <div class="sig-dishes-list">
+            <div class="sig-dish">
+              <div class="sd-name">Dal Makhani</div>
+              <div class="sd-note">Black lentils · 18-hour slow burn · Butter + cream</div>
+            </div>
+            <div class="sig-dish">
+              <div class="sd-name">Biryani</div>
+              <div class="sd-note">Basmati · Hyderabadi style · Dum pukht</div>
+            </div>
+            <div class="sig-dish">
+              <div class="sd-name">Butter Chicken</div>
+              <div class="sd-note">Tandoori · Tomato gravy · Restaurant secret</div>
+            </div>
+            <div class="sig-dish">
+              <div class="sd-name">Paneer Tikka</div>
+              <div class="sd-note">Tandoor · Charred edges · Fresh mint yogurt</div>
+            </div>
+            <div class="sig-dish">
+              <div class="sd-name">Rogan Josh</div>
+              <div class="sd-note">Lamb · Aromatic spices · Slow cooked</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 9: Signature Dishes right -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sl-full-photo" style="height:100%">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=580&q=85&fit=crop" alt="Dal Makhani" class="sl-photo">
+          <div class="sl-photo-caption" style="color:#fff;">Dal Makhani · The Soul of TreeOak</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 10: Recipe left -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">RECIPE STUDIO</div>
+          <h2 class="big-word-heading sm">Cook<br>Along</h2>
+          <div class="rule-line"></div>
+          <p class="editor-body">Take this home. We've written our dal recipe for the ambitious cook—not simplified, not diluted. This is what our kitchen makes, step by step, ingredient by ingredient.</p>
+          <div class="recipe-ingredients">
+            <div class="ri-label">Base</div>
+            <div class="ri-item">Black lentils (urad dal) · 250g</div>
+            <div class="ri-item">Red kidney beans (rajma) · 100g</div>
+            <div class="ri-item">Ginger-garlic paste · 2 tbsp</div>
+            <div class="ri-item">Green chilli · 3 nos</div>
+            <div class="ri-label" style="margin-top:8px;">Spice</div>
+            <div class="ri-item">Cumin seeds · 1 tsp</div>
+            <div class="ri-item">Cinnamon stick · 1 inch</div>
+            <div class="ri-item">Cardamom · 4 pods</div>
+            <div class="ri-item">Bay leaf · 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 11: Recipe right -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sr-chef-special" style="padding: 28px 24px;">
+          <h3 class="sr-heading">18-Hour<br><em>Dal Makhani</em></h3>
+          <div class="rule-line"></div>
+          <p class="sr-body"><strong>Step 1:</strong> Soak lentils and beans for 30 minutes. Boil separately until 60% cooked (lentils: 1.5 hours, beans: 2 hours).</p>
+          <p class="sr-body"><strong>Step 2:</strong> Toast cumin, cinnamon, cardamom, bay leaf in ghee for 45 seconds. Add ginger-garlic paste, cook 3 minutes on low heat.</p>
+          <p class="sr-body"><strong>Step 3:</strong> Add cooked dal and beans to the tadka. Add salt, red chilli powder (1 tsp), and turmeric (1/2 tsp). Mix well.</p>
+          <p class="sr-body"><strong>Step 4:</strong> Slow simmer for 16 hours on the lowest heat (or in a clay pot buried in embers, traditionally). Stir every 2 hours.</p>
+          <p class="sr-body"><strong>Step 5:</strong> Add butter (100g) and fresh cream (150ml) in the last hour. Fold in gently. Garnish with fresh coriander and kasuri methi.</p>
+          <p class="sr-body" style="font-style:italic; margin-top:8px;">The magic happens in the waiting. This dal cannot be rushed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 12: Behind Kitchen left -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">BEHIND THE KITCHEN</div>
+          <h2 class="big-word-heading sm">Process,<br>Craft,<br>Devotion</h2>
+          <div class="rule-line"></div>
+          <p class="editor-body">Every dish at TreeOak is built on three pillars: obsessive process, refined craft, and genuine devotion to ingredient and tradition.</p>
+          <div class="btk-pillars">
+            <div class="pillar">
+              <div class="p-title">Process</div>
+              <div class="p-text">Measured. Repeatable. No shortcuts. Every spice is weighed, every ingredient sourced from trusted suppliers, every step timed to the minute.</div>
+            </div>
+            <div class="pillar">
+              <div class="p-title">Craft</div>
+              <div class="p-text">Years of training. Our head chef learned under masters in Lucknow and Hyderabad. Technique is passed hand to hand, not downloaded.</div>
+            </div>
+            <div class="pillar">
+              <div class="p-title">Devotion</div>
+              <div class="p-text">We are not just feeding hunger. We are honouring tradition, feeding memory, creating moments that linger long after the plate is cleared.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 13: Behind Kitchen right photo -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sl-full-photo" style="height:100%">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=580&q=85&fit=crop" alt="Kitchen" class="sl-photo">
+          <div class="sl-photo-caption" style="color:#fff;">Our kitchen at 5 AM, before service begins</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 14: Customer Favorites left -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">VOICES FROM OUR TABLE</div>
+          <h2 class="big-word-heading sm">Customer<br>Favourites</h2>
+          <div class="rule-line"></div>
+          <div class="testimonial">
+            <div class="t-quote">"Every spoonful tastes like it was made with love."</div>
+            <div class="t-author">— Priya M., Regular Customer</div>
+          </div>
+          <div class="testimonial">
+            <div class="t-quote">"I tried replicating the dal at home. Gave up after 3 hours."</div>
+            <div class="t-author">— Rahul K., Food Enthusiast</div>
+          </div>
+          <div class="testimonial">
+            <div class="t-quote">"This is what Indian food should taste like."</div>
+            <div class="t-author">— Anaya D., Food Critic</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 15: Favorites right -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sl-full-photo" style="height:100%">
+          <img src="https://images.unsplash.com/photo-1517521271924-fc3ee12a4787?w=580&q=85&fit=crop" alt="Food" class="sl-photo">
+          <div class="sl-photo-caption" style="color:#fff;">Biryani · Served on a warm clay plate</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 16: Drinks left -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">PAIRINGS</div>
+          <h2 class="big-word-heading sm">Drinks &<br>Digestifs</h2>
+          <div class="rule-line"></div>
+          <p class="editor-body">The meal doesn't end at the main course. Our drink selection is crafted to echo the spices on your plate—refreshing, warming, or soothing, depending on what came before.</p>
+          <div class="drinks-list">
+            <div class="drink-item">
+              <div class="d-title">Masala Chai</div>
+              <div class="d-desc">Cardamom · Ginger · Clove · Served hot</div>
+            </div>
+            <div class="drink-item">
+              <div class="d-title">Lassi (Sweet)</div>
+              <div class="d-desc">Yogurt · Rose · Cardamom · Chilled</div>
+            </div>
+            <div class="drink-item">
+              <div class="d-title">Mint Cooler</div>
+              <div class="d-desc">Fresh mint · Lime · Rock salt · Ice</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 17: Drinks right -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sl-full-photo" style="height:100%">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=580&q=85&fit=crop" alt="Drink" class="sl-photo">
+          <div class="sl-photo-caption" style="color:#fff;">Masala Chai · The perfect ending</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 18: Desserts left -->
+    <div class="page">
+      <div class="page-content spread-left-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="spread-left-inner">
+          <div class="section-eyebrow">SWEET FINISH</div>
+          <h2 class="big-word-heading sm">Desserts</h2>
+          <div class="rule-line"></div>
+          <p class="editor-body">A meal at TreeOak does not end with the last savoury bite. It lingers—in a spoonful of saffron phirni, a bite of warm gulab jamun, or a slice of our celebrated chocolate mishti doi.</p>
+          <div class="dessert-menu">
+            <div class="dessert-row"><div class="d-name">Saffron Phirni</div><div class="d-note">Chilled · Rose petal · Earthen bowl</div></div>
+            <div class="d-rule"></div>
+            <div class="dessert-row"><div class="d-name">Gulab Jamun</div><div class="d-note">Cardamom syrup · Warm · Served in pairs</div></div>
+            <div class="d-rule"></div>
+            <div class="dessert-row"><div class="d-name">Chocolate Mishti Doi</div><div class="d-note">Dark cacao · Bengali curd · Modern fusion</div></div>
+            <div class="d-rule"></div>
+            <div class="dessert-row"><div class="d-name">Mango Kulfi</div><div class="d-note">Alphonso · Malai base · Pista garnish</div></div>
+            <div class="d-rule"></div>
+            <div class="dessert-row"><div class="d-name">Shahi Tukda</div><div class="d-note">Double cream · Rose water · Gold leaf</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 19: Desserts right -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sl-full-photo" style="height:100%">
+          <img src="https://images.unsplash.com/photo-1546521957-becf0406e398?w=580&q=85&fit=crop" alt="Dessert" class="sl-photo">
+          <div class="sl-photo-caption" style="color:#fff;">Gulab Jamun · Warm, spiced, unforgettable</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 20: Seasonal Dark Left -->
+    <div class="page">
+      <div class="page-content spread-left-page sl-dark-green">
+        <div class="magazine-tab light-tab">MAGAZINE</div>
+        <div class="dark-left-inner">
+          <div class="section-eyebrow light-eyebrow">SEASONAL SPECIALS</div>
+          <h2 class="dark-heading">Monsoon<br><em>Harvest</em><br>Edition</h2>
+          <p class="dark-body">As the rains arrive, so does a new menu. Warm broths, fragrant spiced teas, earthy mushroom gravies, and turmeric-laced soups crafted for the season of slowing down.</p>
+          <div class="seasonal-list">
+            <div class="seasonal-item">Mushroom & Peppercorn Shorba</div>
+            <div class="seasonal-item">Rain-day Keema Pav</div>
+            <div class="seasonal-item">Hot Masala Chai Set</div>
+            <div class="seasonal-item">Corn & Turmeric Cream Soup</div>
+            <div class="seasonal-item">Bhutta Chaat — Street Style</div>
+          </div>
+          <div class="seasonal-note">Limited availability · July–September</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 21: Our Story -->
+    <div class="page">
+      <div class="page-content spread-right-page">
+        <div class="sl-full-photo" style="height:100%">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=580&q=85&fit=crop" alt="Seasonal" class="sl-photo">
+          <div class="seasonal-overlay">
+            <div class="section-eyebrow light-eyebrow" style="margin-bottom:8px">OUR STORY</div>
+            <div class="our-story-quote">"A kitchen built<br>on conviction."</div>
+            <p class="our-story-body">TreeOak Kitchen started in a 400 sq ft cloud kitchen in Hyderabad. No dining rooms. Just a team of five and a shared belief: restaurant-quality food should reach every doorstep.</p>
+            <div class="story-values-mini">
+              <span>🌿 Farm-sourced</span>
+              <span>⏱ Made fresh per order</span>
+              <span>📦 Eco packaging</span>
+              <span>🔥 Never reheated</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 22: BACK COVER (hard page) -->
+    <div class="page" data-density="hard">
+      <div class="page-content back-cover-page">
+        <div class="magazine-tab">MAGAZINE</div>
+        <div class="back-cover-inner">
+          <div class="bc-top">
+            <div class="bc-brand">TreeOak Kitchen</div>
+            <div class="bc-tagline">THE CULINARY JOURNAL · ISSUE 01 · 2025</div>
+          </div>
+          <div class="bc-food-banner">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&q=85&fit=crop" alt="Food" class="bc-food-img">
+          </div>
+          <div class="bc-qr-row">
+            <div class="bc-qr-block">
+              <div class="qr-visual">
+                <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="5" y="5" width="30" height="30" rx="2" fill="#1C1C1E"/>
+                  <rect x="10" y="10" width="20" height="20" rx="1" fill="#FAF7F2"/>
+                  <rect x="13" y="13" width="14" height="14" rx="1" fill="#1C1C1E"/>
+                  <rect x="55" y="5" width="30" height="30" rx="2" fill="#1C1C1E"/>
+                  <rect x="60" y="10" width="20" height="20" rx="1" fill="#FAF7F2"/>
+                  <rect x="63" y="13" width="14" height="14" rx="1" fill="#1C1C1E"/>
+                  <rect x="5" y="55" width="30" height="30" rx="2" fill="#1C1C1E"/>
+                  <rect x="10" y="60" width="20" height="20" rx="1" fill="#FAF7F2"/>
+                  <rect x="13" y="63" width="14" height="14" rx="1" fill="#1C1C1E"/>
+                  <rect x="42" y="5" width="6" height="6" fill="#1C1C1E"/>
+                  <rect x="42" y="14" width="6" height="6" fill="#1C1C1E"/>
+                  <rect x="42" y="23" width="6" height="6" fill="#1C1C1E"/>
+                  <rect x="5" y="42" width="6" height="6" fill="#1C1C1E"/>
+                  <rect x="14" y="42" width="6" height="6" fill="#1C1C1E"/>
+                  <rect x="23" y="42" width="6" height="6" fill="#1C1C1E"/>
+                </svg>
+              </div>
+              <div class="qr-label">Scan to Order</div>
+            </div>
+            <div class="bc-links">
+              <div class="bc-link">🌐 www.treeoak.kitchen</div>
+              <div class="bc-link">📸 @treeoakkitchen</div>
+              <div class="bc-link">📞 +91 98765 43210</div>
+            </div>
+          </div>
+          <div class="bc-closing">Order. Taste. Return.</div>
+          <div class="bc-price">₹ 450 &nbsp;·&nbsp; INDIA ONLY</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end flipBook -->
+</div><!-- end book-stage -->
+
+<!-- BOTTOM TOOLBAR -->
+<div class="bottom-toolbar">
+  <div class="toolbar-left">
+    <button class="tb-btn" id="zoomBtn" title="Zoom">&#128269;</button>
+    <button class="tb-btn" id="gridBtn" title="All Pages">&#9783;</button>
+    <button class="tb-btn" id="bookmarkBtn" title="Bookmark">&#128278;</button>
+    <button class="tb-btn" title="Sound">&#128266;</button>
+  </div>
+  <div class="toolbar-center">
+    <button class="tb-nav" id="tbFirst" title="First">&#9664;&#9664;</button>
+    <button class="tb-nav" id="tbPrev" title="Previous">&#9664;</button>
+    <div class="tb-page-num" id="tbPageNum">1 / 22</div>
+    <button class="tb-nav" id="tbNext" title="Next">&#9654;</button>
+    <button class="tb-nav" id="tbLast" title="Last">&#9654;&#9654;</button>
+  </div>
+  <div class="toolbar-right">
+    <button class="tb-btn" id="shareBtn" title="Share">&#8659;</button>
+    <button class="tb-btn" id="fsBtn" title="Fullscreen">&#9974;</button>
+    <button class="tb-btn" title="Mail">&#9993;</button>
+  </div>
+</div>
+
+<!-- THUMBNAIL OVERLAY -->
+<div class="thumb-overlay" id="thumbOverlay">
+  <div class="thumb-panel">
+    <button class="thumb-close-btn" id="thumbCloseBtn">&#10005;</button>
+    <div class="thumb-grid" id="thumbGrid"></div>
+  </div>
+</div>
+
+<script src="magazine.js"></script>
+</body>
+</html>
